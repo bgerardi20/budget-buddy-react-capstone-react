@@ -60,6 +60,18 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _intro = __webpack_require__(547);
+	
+	var _intro2 = _interopRequireDefault(_intro);
+	
+	var _quickView = __webpack_require__(548);
+	
+	var _quickView2 = _interopRequireDefault(_quickView);
+	
+	var _header = __webpack_require__(549);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -68,6 +80,15 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.getElementById('reactIntro'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_quickView2.default, null), document.getElementById('reactQuickView'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
 	});
 
 /***/ }),
@@ -66807,6 +66828,271 @@
 	}
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Intro;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Intro(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'introScreen' },
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'welcomeContainer' },
+	            _react2.default.createElement('img', { className: 'loginLogo', src: 'assets/website-images/finance-background.jpg', alt: 'budget_background' }),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'welcomeMessage' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'firstWelcomeMessage' },
+	                    'Trouble Sticking To a Budget?'
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'secondWelcomeMessage' },
+	                    'Meet your New Buddy..'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'welcomeButtonContainer' },
+	                    _react2.default.createElement(
+	                        'button',
+	                        { className: 'loginButton jsLoginButton', type: 'submit' },
+	                        'Login'
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        { className: 'loginButton jsRegisterButton', type: 'submit' },
+	                        'Register'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = QuickView;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function QuickView(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'quickView' },
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'quickViewContainer' },
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'quickViewList' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'quickViewOptions', id: 'quickViewBudget' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'quickViewTitle' },
+	                        'Set Monthly Budgets'
+	                    ),
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-balance-scale quickViewIcon' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'quickViewOptions', id: 'quickViewTrans' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'quickViewTitle' },
+	                        'Track Transactions'
+	                    ),
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'far fa-credit-card quickViewIcon' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'quickViewOptions', id: 'quickViewGoals' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'quickViewTitle' },
+	                        'Set Financial Goals'
+	                    ),
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-tasks quickViewIcon' })
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 549 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Header;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Header(props) {
+	    return _react2.default.createElement(
+	        'header',
+	        { className: 'headerContainer' },
+	        _react2.default.createElement(
+	            'nav',
+	            { className: 'navContainer' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'logoHolder' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'resultTitle' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Budget'
+	                    ),
+	                    ' Buddy'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'navList' },
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: '', className: 'navOptions jsHomeNav' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-home logos' }),
+	                        ' Home'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: '', className: 'navOptions jsBudgetNav' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-balance-scale logos' }),
+	                        ' Budget'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: '', className: 'navOptions jsGoalNav' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-tasks logos' }),
+	                        ' Goal'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: '', className: 'navOptions jsLogoutNav' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fas fa-sign-out-alt logos' }),
+	                        ' Logout'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
 
 /***/ })
 /******/ ]);
